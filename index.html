@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio JavaScript</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+<!-- MARQUESINA -->
+<div class="marquesina">
+    <marquee>Bienvenido a mi portafolio JavaScript - UVM San Rafael</marquee>
+</div>
+
+<!-- CONTENEDOR GENERAL -->
+<div class="container">
+
+    <!-- PORTADA -->
+    <header class="card">
+        <h1 id="titulo">Mi Portafolio JavaScript</h1>
+        <p><strong>Nombre:</strong> Javier</p>
+        <p><strong>Campus:</strong> UVM San Rafael</p>
+        <p><strong>Docente:</strong> Eliud Medina</p>
+    </header>
+
+    <!-- GRÁFICA -->
+    <section class="card">
+        <h2>Ciudadanía Digital</h2>
+        <canvas id="grafica"></canvas>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section class="card">
+        <h2>Galería Interactiva</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img1.jpg" alt="Imagen 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img2.jpg" alt="Imagen 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img3.jpg" alt="Imagen 3">
+                </div>
+            </div>
+
+            <!-- Flechas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Paginación -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- INTERACCIÓN -->
+    <section class="card">
+        <h2>Interacción</h2>
+        <button class="btn" id="boton1">Haz clic</button>
+        <button class="btn" id="boton2">Cambiar color</button>
+    </section>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
